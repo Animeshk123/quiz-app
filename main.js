@@ -102,7 +102,7 @@ nextbtn.addEventListener("click", () => {
         items.classList.remove("wrong");
         items.style.pointerEvents = "unset";
     });
-if(number > 5) {
+if(number > quizApi.length) {
   bgmusic.pause();
 }
     clearInterval(counter);
@@ -202,7 +202,8 @@ function selectItem(element) {
     })
     clearInterval(counter);
     if (ans === you) {
-        totaltrue++;
+        totaltrue = totaltrue + 1;
+        total.innerText = totaltrue;
         element.target.classList.add("corrcet")
         rightsong.currentTime = 0;
           rightsong.play();
