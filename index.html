@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>quiz app</title>
+    
+    <!-- HTML -->
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Project -->
+    <div class="start center"><button type="button" class="btn-sm boxShadow bgcolor">Start</button></div>
+    <div class="rules center boxShadow bgcolor border">
+        <h2 class="lightBold color-xl">Here is some tips about this Game </h2>
+        <div class="rules_list color-xl">
+            <li>1: You will get only <span class="bold colormain">15 seconds</span> to answer a question</li>
+            <li>2: This is simple rule list</li>
+            <li>3: This is simple rule list</li>
+            <li>4: This is simple rule list</li>
+        </div>
+        <div class="rule_last">
+            <button type="button" class="btn-small exit">exit Quiz</button>
+            <button type="button" class="btn-small contineue">contineue</button>
+        </div>
+    </div>
+    <div class="question center bgcolor boxShadow border">
+        <header class="boxShadow flex-space">
+            <div class="logo lightBold">Quiz Application</div>
+            <div class="timer flex-space">
+                <div class="timer_text">Time left :</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="timer_status"></div>
+        </header>
+        <div class="main_ques bgcolor">
+            <h3 class="bold"></h3>
+            <div class="hints">
+                <div class="hint">
+                    <li></li>
+                </div>
+                <div class="hint">
+                    <li></li>
+                </div>
+                <div class="hint">
+                    <li></li>
+                </div>
+                <div class="hint">
+                    <li></li>
+                </div>
+            </div>
+        </div>
+        <div class="ques_footer flex-space">
+            <div class="status flex-space"><p class="first">0 </p>  <span>out of</span> <p class="sec">5</p>
+            </div>
+            <div class="next"><button class="btn-small" type="button">next</button></div>
+        </div>
+    </div>
+    <div class="greet center bgcolor border boxShadow">
+        <div class="icon flex"><i class="fas fa-crown"></i></div>
+        <div class="greetText lightBold">yahoo! you have finished the quiz,and <span id="greetingText" class="bold color-xl "> congrats  </span>  you have get <span class="number"> 5 </span>  out of <span class="totalnum"> 5 </span> </div>
+        <div class="try flex-space">
+            <button type="button" id="exitlast" class="btn-small">Exit game</button>
+            <button type="button" class="btn-small" id="tryagain">try again</button>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="model center bgcolor boxShadow border">
+  <h3>please select a answer</h3>
+  <button type="button">okay</button>
+</div>
+    <script src="quizApi.js" type="text/javascript" charset="utf-8"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
