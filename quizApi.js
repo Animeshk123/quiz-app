@@ -86,5 +86,16 @@ const quizApi = [
             hint4:"Math.max(x,y)"
           },
           Ans:"Math.max(x,y)"
-        }
+        },
+       {
+       id:9,
+       question:"which one is not a javascript variable?",
+       hints: {
+            hint1:"let",
+            hint2:"consts",
+            hint3:"var",
+            hint4:"const"
+          },
+          Ans:"consts"
+       }
     ]
